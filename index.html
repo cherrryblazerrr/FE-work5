@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Наушенко Д.С. ІП-34</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/color-table.css">
+</head>
+<body>
+<div class="check-container">
+    <div class="input-container">
+        <form id="input-form">
+            <h2>Форма для заповнення</h2>
+            <div>
+                <label>ПІБ</label>
+                <input type="text" id="name" placeholder="ТТТТТTTTTT Т.Т.">
+            </div>
+            <div>
+                <label>Варіант</label>
+                <input type="text" id="variant" placeholder="ЧЧ">
+            </div>
+            <div>
+                <label>Група</label>
+                <input type="text" id="group" placeholder="ТТ-ЧЧ">
+            </div>
+            <div>
+                <label>Телефон</label>
+                <input type="text" id="phone-number" placeholder="(ЧЧЧ)-ЧЧЧ-ЧЧ-ЧЧ">
+            </div>
+            <div>
+                <label>ID-card</label>
+                <input type="text" id="id-card" placeholder="ТТ №ЧЧЧЧЧЧ">
+            </div>
+            <button type="submit">Перевірити</button>
+        </form>
+    </div>
+    <div class="output-container">
+        <div id="output-form">
+            <h3>Введена інформація</h3>
+            <div><b>ПІБ:</b> <span id="out-name"></span></div>
+            <div><b>Варіант:</b> <span id="out-variant"></span></div>
+            <div><b>Група:</b> <span id="out-group"></span></div>
+            <div><b>Телефон:</b> <span id="out-phone"></span></div>
+            <div><b>ID-card:</b> <span id="out-id"></span></div>
+        </div>
+    </div>
+</div>
+<div class="color-center-block">
+    <div class="color-picker-container">
+        <h2>Оберіть колір</h2>
+        <input type="color" id="color-picker">
+    </div>
+    <table id="my-table"></table>
+</div>
+<script src="./js/form.js"></script>
+<script src="./js/color-table.js"></script>
+</body>
+</html>

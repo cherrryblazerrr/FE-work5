@@ -1,0 +1,109 @@
+html {
+  background-color: #f2f2f2;
+  font-family: "Segoe UI", sans-serif;
+}
+.check-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 3em;
+  padding: 2em;
+  min-height: 40em;
+  box-sizing: border-box;
+}
+
+.input-container {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 1.5em;
+  box-sizing: border-box;
+}
+
+#input-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  width: 30em;
+  padding: 2em;
+  background-color: #ffffff;
+  border-radius: 0.8em;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.15);
+  border: 1px solid #dddddd;
+}
+
+.input-container h2 {
+  align-self: center;
+  margin-bottom: 1em;
+  font-size: 1.7em;
+  color: #333333;
+}
+
+.output-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 1.5em;
+  box-sizing: border-box;
+}
+
+#output-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  background-color: white;
+  border-radius: 0.8em;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.15);
+  width: 20em;
+  padding: 2em;
+}
+
+#output-form h3 {
+  align-self: center;
+  color: #333333;
+  font-size: 1.2em;
+}
+
+label {
+  font-weight: 500;
+  color: #333333;
+  margin-left: 0.5em;
+}
+
+input, button {
+  width: 100%;
+  font-size: 1em;
+  border-radius: 0.5em;
+  padding: 0.6em 1em;
+  box-sizing: border-box;
+}
+
+input {
+  border: 1px solid gray;
+  background-color: white;
+  color: black;
+  margin-top: 0.3em;
+}
+input.error {
+  border: 2px solid red;
+}
+button {
+  background-color: lawngreen;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.1s;
+}
+
+button:hover {
+  background-color: #7de03f;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
